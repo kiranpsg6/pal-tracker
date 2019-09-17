@@ -27,7 +27,7 @@ jobs:
       language: bash
       script:
         - echo "Downlo/libs ading $RELEASE_TAG"
-          - wget -P build https://github.com/$GITHUB_USERNAME/pal-tracker/releases/download/$RELEASE_TAG/pal-tracker2.jar
+        - wget -P build/libs https://github.com/$GITHUB_USERNAME/pal-tracker/releases/download/$RELEASE_TAG/pal-tracker2.jar
       before_deploy:
         - echo "Deploying $RELEASE_TAG to Cloud Foundry"
       deploy:
