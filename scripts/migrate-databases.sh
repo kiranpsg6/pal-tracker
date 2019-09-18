@@ -2,9 +2,9 @@
 
 set -e
 
-app_name="${1:-pal-tracker}"
+app_name="${1:-pal-tracker2}"
 script_dir="${2:-.}"
-service_name="${3:-tracker-database}"
+service_name="${3:-tracker-database2}"
 service_key="${4:-flyway-migration-key}"
 
 function main() {
